@@ -12,4 +12,14 @@ class Day3Test extends AnyFunSuite {
         val input: List[String] = Day3.readInput("src/main/scala/Day3/input.txt")
         assert(Day3.calculatePowerConsumptionPart1(input) == 2035764)
     }
+
+    test("with example input - part 2") {
+        val input: List[String] = Day3.readInput("src/main/scala/Day3/input_example.txt")
+        assert(Day3.calculateLifeSupportRatingPart2(input) == 230)
+    }
+
+    test("with input - part 2") {
+        val input: List[String] = Day3.readInput("src/main/scala/Day3/input.txt")
+        assert(Day3.calculateLifeSupportRatingPart2(input) == 2817661)
+    }
 }
